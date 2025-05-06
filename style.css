@@ -1,0 +1,144 @@
+/* Basic Reset & Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* A more classic font for academic/professional look */
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-top: 20px; /* Space for content below header */
+}
+
+.container {
+    width: 80%;
+    max-width: 900px; /* Max width for readability */
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #ffffff; /* White background for header */
+    color: #333;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 2.5em; /* Larger name */
+    margin-bottom: 5px;
+    font-family: 'Helvetica Neue', sans-serif; /* A cleaner font for the name */
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Sections General Styling */
+section {
+    background-color: #ffffff; /* White background for content sections */
+    padding: 25px;
+    margin-bottom: 30px; /* Space between sections */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow */
+}
+
+section h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Publications & Honors Section */
+#publications ul, #honors ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+#publications li, #honors li {
+    font-size: 1em;
+    margin-bottom: 15px; /* Space between list items */
+    padding-left: 20px; /* Indent text */
+    position: relative; /* For custom bullet */
+}
+
+/* Custom bullet style (optional) */
+#publications li::before, #honors li::before {
+    content: "\2022"; /* Bullet character */
+    color: #5588dd; /* Accent color for bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.2em; /* Position bullet before text */
+    position: absolute;
+    left: 10px;
+}
+
+#publications strong { /* Highlight your name or key part */
+    font-weight: bold;
+}
+
+#publications em, #honors em { /* Italicize journal/institution or other details */
+    font-style: italic;
+}
+
+#publications a, #honors a, #about a { /* Styling for all links */
+    color: #5588dd;
+    text-decoration: none;
+}
+
+#publications a:hover, #honors a:hover, #about a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #f0f0f0; /* Lighter footer */
+    color: #555;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    color: #5588dd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+}
